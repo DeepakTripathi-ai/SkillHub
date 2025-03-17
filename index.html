@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+    <!-- A. Header Section -->
+    <header >
+        <nav>
+            <!-- 1.Logo with link index.html -->
+            <a href="index.html"> 
+                <div class="nav-logo border">
+                        <pre>SKILL <span><i class="fa-solid fa-book-open-reader"></i></span> HUB</pre>
+                </div>
+            </a>
+
+            <!-- 2. Navigation Links -->
+            <div class="nav-link" >
+                <ul id="menu">
+                    <li><a href="index.html" class="border-ancor">Home</a></li>
+                    <li><a href="course.html" class="border-ancor">Courses</a></li>
+                    <li><a href="plans.html" class="border-ancor">Plans</a></li>
+                    <li><a href="about.html" class="border-ancor">About</a></li>
+                </ul>
+            </div>
+
+            <!-- 3. Login and Signup Button -->
+            <div class="button-and-icon">
+
+                <a href="login.html"><button class="btnlogin">Login</button></a>
+                <a href="signup.html"><button class="btnsignup">Signup</button></a>
+
+                <!-- 3.Bar icon inside button div-->
+                <div><i class="fa-solid fa-bars" onclick="openMenu()" id="menuIcon"></i></div>
+
+                <!-- 4.circle-xmark inside button div-->
+                <div><i class="fa-solid fa-circle-xmark" onclick="closeMenu()" id="closeIcon"></i></div>
+            </div>
+            
+        </nav>    
+   </header>
+   
+   
+  <script src="js/menubar.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(18, 31, 59);
+}
+
+/* header to edit nabar */
+header{
+    width: 100%;
+    height:65px;
+    background-color: #020a1b;
+    transition: box-shadow 0.3s; 
+    border-bottom: 1.5px solid transparent;
+    align-items: center;
+    display: flex;
+}
+
+header:hover{
+    box-shadow:0 5px 10px rgb(0, 255, 238);
+    border-bottom: 1.5px solid rgb(0, 255, 238);
+}
+
+/* nav tag */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    margin:0 auto; 
+}
+
+/* logo  */
+.nav-logo{
+    margin-left: 50px;
+    width: 140px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex; 
+    justify-content: center; 
+    font-size: 20px;
+    color: white;
+}
+
+.border{
+    border:1.5px solid rgb(255, 0, 0);
+    border-radius: 3px;
+    padding: 7px 5px;
+}
+.border:hover{
+    border:1.5px solid rgb(0, 195, 255);
+    padding: 5px 5px;
+}
+
+/*edit navbar menu */
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px; 
+}
+
+/* anchor border hover effect */
+.border-ancor {
+    transition: border-color 0.3s, padding 0.3s;
+}
+.border-ancor:hover{
+    border:1.5px solid rgb(0, 195, 255);
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+ 
+.nav-link li{
+    display: inline;
+    margin: 0 20px;
+}
+
+/* edit navbar button */
+.button-and-icon{
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+}
+.btnlogin{
+    border:1.5px solid rgb(0, 195, 255);
+    border-radius: 7px;
+    padding: 5px 10px;
+    color: rgb(255, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.btnlogin:hover{
+    border: 1.5px solid rgb(255, 0, 0);
+    color: rgb(0, 195, 255);
+}
+
+.btnsignup{
+    border:1.5px solid rgb(0, 195, 255);
+    border-radius: 7px;
+    padding: 5px 10px;
+    color: rgb(255, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+    margin-right: 25px;
+}
+
+.btnsignup:hover{
+    border: 1.5px solid rgb(255, 0, 0);
+    color: rgb(0, 195, 255);
+}
+
+/*bar Icon inside button div */
+#menuIcon{
+    color:white;
+    padding: 2px 3px;
+    font-size: 25px;
+    transition: box-shadow 0.3s; 
+    border-bottom: 1.5px solid transparent;
+    display: none;
+}
+
+#menuIcon:hover{
+    box-shadow:0 3px 5px rgb(255, 0, 0);
+    border-bottom: 1.5px solid rgb(255, 0, 0);
+} 
+
+/* closeIcon inside button div */
+#closeIcon{
+    color:white;
+    padding: 3px 3px;
+    font-size: 25px;
+    transition: box-shadow 0.3s; 
+    border-bottom: 1.5px solid transparent;
+    display: none;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+
+#closeIcon:hover{
+    box-shadow:0 3px 5px rgb(255, 0, 0);
+    border-bottom: 1.5px solid rgb(255, 0, 0);
+}
+
+
+/* media query */
+
+@media screen and (max-width: 1023px){
+    .nav-logo{
+        margin-left: 20px;
+        width: 145px; 
+        font-size: 20px;
+    }
+
+    #menu{
+        display: none;
+        background-color: #061433;
+        width: 100%;
+        right: 0%;
+        position: absolute;
+        top: 65.1px;
+        height: auto;
+        text-align: center;
+    }
+
+    #menu li{
+        display: block;
+        margin: 10px 0px;
+    }
+
+   /* Hover Effect for Menu Links */
+    .border-ancor {
+        transition: all 0.3s;
+        border: 1.5px solid transparent; 
+        display: inline-block;
+        width: 95%;
+    }
+
+    .border-ancor:hover {
+        transition: all 0.3s; /* Smooth transition */
+        border: 1.5px solid rgb(0, 195, 255);
+        border-radius: 7px;
+    }
+
+    
+
+    /* show icon in md and sd*/
+    #menuIcon{
+        display: block; 
+        margin-left: 20px;
+    }
+
+    #closeIcon{
+        display: none; 
+        font-size: 28px;
+        margin-right: 5px;
+    }
+    
+}
+/* header portion is completed */
+
+
+/* now main part start */
+
+/* Main part styling for screens larger than 1023px */
+.center-text h4{
+    margin-top: 20px;
+    font-size: 28px;
+    color: rgb(218, 112, 206);
+    justify-content: center;
+}
+
+.center-text{
+    text-align: center;
+    font-size: 30px;
+    color: blueviolet;
+    font-family: Arial;
+}
+
+.courses-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.row{
+    background: lightskyblue;
+    padding: 0px 0px 10px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px rgb(19, 8, 73 / 13%);
+    transition: all .40s ease;
+}
+
+.row:hover{
+    transform: translateY(-15px);
+}
+
+.row img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.courses-text{
+    padding: 35px 20px;
+}
+
+.courses-text h4{
+    color: rgba(255, 0, 0, 0.958);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.courses-text h2{
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px 0 15px;
+    transition: all .40s ease;
+}
+
+.courses-text h2:hover{
+    color: rgb(255, 38, 0);
+}
+
+.courses-text h5{
+    color: #696969;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.star i{
+    color:  rgba(255, 0, 0, 0.958);
+    margin-right: 2px;
+    font-size: 18px;
+}
+
+.review p{
+    color: #696969;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.main-btn{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 16px 30px;
+    font-size: 20px;
+    font-weight: 800;
+    background: blueviolet;
+    color: white;
+    border-radius: 30px;
+    transition: all .30s ease;
+}
+
+.btn:hover{
+    transform: scale(0.9) translateY(-6px);
+}
+
+/* Media Query for screen sizes less than 1024px */
+@media screen and (max-width: 1023px) {
+    .center-text{
+        margin-top: 10rem;
+    }
+
+    .courses-content {
+        margin-top: 10rem; /* Moves the main part further down */
+        grid-template-columns: 1fr; /* Single column layout */
+        padding: 0 10px;
+    }
+}
