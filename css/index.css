@@ -1,16 +1,101 @@
-/* For Large Devices */
-@media (min-width: 769px) {
-    #main-content {
-        padding: 0rem 1rem;
-        margin-top: 1rem;
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:#020a1b;
+}
+
+/* Common Styles for Containers */
+.container-one, .container-two, .container-three {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+}
+
+/* Container-One Styling */
+.container-one {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Big Boxes Inside Container-One */
+.container-one .big-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+}
+
+/* Container-Two Styling */
+.container-two {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Row Styling for Container-Two */
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Box Styling for Small Boxes */
+.container-two .small-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+}
+
+/* Container-Three Styling */
+.container-three {
+    height: 200px;
+}
+
+/* Small Devices Styling */
+@media (max-width: 768px) {
+    .container-one .big-box,
+    .row .small-box {
+        width: 100%;
+    }
+
+    .container-one {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
     }
 }
 
-/* For Small Devices */
-@media (max-width: 768px) {
-    
-    #main-content {
-        padding: 0rem 0.5rem;
-        margin-top: 1rem;
+/* Medium & Large Devices Styling */
+@media (min-width: 769px) {
+    /* Container-One - Show Boxes Side-by-Side */
+    .container-one {
+        flex-direction: row;
     }
+    .container-one .big-box {
+        width: 48%;
+    }
+
+    /* Container-Two - Show Small Boxes in Rows */
+    .row {
+        flex-direction: row;
+    }
+    .row .small-box {
+        width: 30%;
+    }
+}
+
+/* Main Content Styling */
+#main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0rem 1rem;
 }

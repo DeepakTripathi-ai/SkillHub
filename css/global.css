@@ -16,8 +16,6 @@ body {
     padding: 10px 20px;
     background:#020a1b;
     color: white;
-    position: relative; /* Necessary for the menu to appear below */
-    z-index: 2;
 }
 
 /* Logo Styling */

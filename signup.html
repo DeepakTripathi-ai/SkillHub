@@ -6,28 +6,27 @@
     <title>SignUp</title>
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Tailwind CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+   
     <!-- Custom Global CSS -->
     <link rel="stylesheet" href="css/global.css">
     <!-- Custom Index CSS -->
     <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-<!-- Header Section -->
-<header>
-  <div class="nav">
+  <!-- Header Section -->
+  <header>
+    <div class="nav">
       <!-- Logo with Icon -->
       <h2 class="logo"><i class="fas fa-graduation-cap"></i> SkillHub</h2>
 
       <!-- Navigation Links -->
       <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="course.html">Courses</a></li>
-          <li><a href="plans.html">Plans</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="signup.html">Signup</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="plans.html">Plans</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Signup</a></li>
       </ul>
 
       <!-- Payment Icon -->
@@ -35,12 +34,12 @@
 
       <!-- Hamburger Menu Icon for Mobile -->
       <div class="menu-icon" id="menu-icon">
-          <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
       </div>
-  </div>
+    </div>
 
-  <!-- Mobile Menu (Hidden by default) -->
-  <div class="mobile-menu" id="mobile-menu">
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="mobile-menu" id="mobile-menu">
       <a href="index.html">Home</a>
       <a href="course.html">Courses</a>
       <a href="plans.html">Plans</a>
@@ -48,34 +47,34 @@
       <a href="login.html">Login</a>
       <a href="signup.html">Signup</a>
       <a href="payment.html"><i class="fas fa-credit-card"></i></a>
-  </div>
-</header>
+    </div>
+  </header>
 
     <main id="main-content">
-        <div class="signup-container">
-            <h1>Sign Up</h1>
-            <form action="#" method="POST">
-              <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required placeholder="Enter your username">
-              </div>
-              <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email">
-              </div>
-              <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required placeholder="Enter your password">
-              </div>
-              <div class="input-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
-              </div>
-              <button type="submit" class="signup-btn">Sign Up</button>
-            </form>
-            <p class="login-text">Already have an account? <a href="loging_2.html">Login here</a></p>
+      <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form action="#" method="POST">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username">
           </div>
-    </main>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+          </div>
+          <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+          </div>
+          <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+        <p class="login-text">Already have an account? <a href="login.html">Login here</a></p>
+      </div>
+      </main>
 
     <script src="js/global.js"></script>
 

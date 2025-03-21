@@ -3,6 +3,7 @@ const menuIcon = document.getElementById('menu-icon');  // Hamburger/Close Icon 
 const mobileMenu = document.getElementById('mobile-menu');  // Mobile Menu Div
 const menuIconIcon = menuIcon.querySelector('i');  // Icon Inside the Button (fa-bars or fa-times)
 
+
 // Function to Toggle Menu and Icon
 function toggleMenu() {
     // Toggle 'show' class on mobileMenu to show/hide menu
