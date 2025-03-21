@@ -6,47 +6,146 @@
     <title>About</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+     <!-- Custom Global CSS -->
+     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/about.css">
+   
     
 </head>
 <body>
-    <!-- A. Header Section -->
-    <header >
-        <nav>
-            <!-- 1.Logo with link index.html -->
-            <a href="index.html"> 
-                <div class="nav-logo border">
-                        <pre>SKILL <span><i class="fa-solid fa-book-open-reader"></i></span> HUB</pre>
-                </div>
-            </a>
+    <!-- Header Section -->
+    <header>
+        <div class="nav">
+            <!-- Logo with Icon -->
+            <h2 class="logo"><i class="fas fa-graduation-cap"></i> SkillHub</h2>
 
-            <!-- 2. Navigation Links -->
-            <div class="nav-link" >
-                <ul id="menu">
-                    <li><a href="index.html" class="border-ancor">Home</a></li>
-                    <li><a href="course.html" class="border-ancor">Courses</a></li>
-                    <li><a href="plans.html" class="border-ancor">Plans</a></li>
-                    <li><a href="about.html" class="border-ancor">About</a></li>
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="plans.html">Plans</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+
+            <!-- Payment Icon -->
+            <a href="payment.html" class="payment-icon"><i class="fas fa-credit-card"></i></a>            
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="plans.html">Plans</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="payment.html"><i class="fas fa-credit-card"></i></a>
+        </div>
+    </header>
+
+
+<main id="main-content">
+    <header class="bg-blue-800 text-white text-center py-12">
+        <h1 class="text-4xl font-semibold">About Us</h1>
+        <p class="mt-4 text-lg">We are a passionate team committed to delivering excellence</p>
+    </header>
+
+    <section class="bg-blue-700 py-16 px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">SkillHub</h2>
+            <p class="text-xl leading-relaxed text-gray-200">
+                Our website was founded with the mission to provide innovative solutions and to make a positive impact in the industry.
+                With a diverse team of experts, we are dedicated to offering top-education services.
+            </p>
+        </div>
+    </section>
+
+    <section class="bg-blue-800 py-16 px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6 text-white">Meet Our Team</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-900">Deepak Tripathi</h3>
+                        <p class="text-gray-700">Team Leader</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-900">Suraj Vishwakarma</h3>
+                        <p class="text-gray-700">Team member</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-900">Dipti Parshivnikar</h3>
+                        <p class="text-gray-700">Team member</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-blue-900">Uma Suryavanshi </h3>
+                    <p class="text-gray-700">Team member</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-blue-900">Dipika Pal</h3>
+                    <p class="text-gray-700">Team member</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-blue-900">Vaishali Sahu</h3>
+                    <p class="text-gray-700">Team member</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white py-16 px-8">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline text-gray-300 hover:text-white">Home</a></li>
+                    <li><a href="#about" class="hover:underline text-gray-300 hover:text-white">About</a></li>
+                    <li><a href="#services" class="hover:underline text-gray-300 hover:text-white">Services</a></li>
+                    <li><a href="#contact" class="hover:underline text-gray-300 hover:text-white">Contact</a></li>
                 </ul>
             </div>
 
-            <!-- 3. Login and Signup Button -->
-            <div class="button-and-icon">
-
-                <a href="login.html"><button class="btnlogin">Login</button></a>
-                <a href="signup.html"><button class="btnsignup">Signup</button></a>
-
-                <!-- 3.Bar icon inside button div-->
-                <div><i class="fa-solid fa-bars" onclick="openMenu()" id="menuIcon"></i></div>
-
-                <!-- 4.circle-xmark inside button div-->
-                <div><i class="fa-solid fa-circle-xmark" onclick="closeMenu()" id="closeIcon"></i></div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                <p class="text-gray-300 mb-2"> Business Ave, Nagpur, Maharashtra, India</p>
+                <p class="text-gray-300 mb-2">Contact: 2314879056</p>
+                <p class="text-gray-300">Email: skill@hub.com</p>
             </div>
-            
-        </nav>    
-   </header>
-   
-   
-  <script src="js/menubar.js"></script>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                <div class="flex space-x-6">
+                    <a href="https://www.facebook.com" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="https://in.linkedin.com" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+          </div>
+        <div class="mt-12 text-center">
+            <p>&copy; 2025 SkillHub Website | All rights reserved</p>
+        </div>
+    </footer>
+</main>
+
+<script src="js/global.js"></script>
+
 </body>
 </html>

@@ -4,49 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillHub</title>
+    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <!-- Custom Global CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <!-- Custom Index CSS -->
     <link rel="stylesheet" href="css/index.css">
-    
 </head>
 <body>
-    <!-- A. Header Section -->
-    <header >
-        <nav>
-            <!-- 1.Logo with link index.html -->
-            <a href="index.html"> 
-                <div class="nav-logo border">
-                        <pre>SKILL <span><i class="fa-solid fa-book-open-reader"></i></span> HUB</pre>
-                </div>
-            </a>
+    <!-- Header Section -->
+    <header>
+        <div class="nav">
+            <!-- Logo with Icon -->
+            <h2 class="logo"><i class="fas fa-graduation-cap"></i> SkillHub</h2>
 
-            <!-- 2. Navigation Links -->
-            <div class="nav-link" >
-                <ul id="menu">
-                    <li><a href="index.html" class="border-ancor">Home</a></li>
-                    <li><a href="course.html" class="border-ancor">Courses</a></li>
-                    <li><a href="plans.html" class="border-ancor">Plans</a></li>
-                    <li><a href="about.html" class="border-ancor">About</a></li>
-                </ul>
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="plans.html">Plans</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+
+            <!-- Payment Icon -->
+            <a href="payment.html" class="payment-icon"><i class="fas fa-credit-card"></i></a>            
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
             </div>
+        </div>
 
-            <!-- 3. Login and Signup Button -->
-            <div class="button-and-icon">
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="plans.html">Plans</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="payment.html"><i class="fas fa-credit-card"></i></a>
+        </div>
+    </header>
 
-                <a href="login.html"><button class="btnlogin">Login</button></a>
-                <a href="signup.html"><button class="btnsignup">Signup</button></a>
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <section>
+            <h1>Welcome to SkillHub!</h1>
+            <p>This is your learning platform. Start learning now!</p>
+        </section>
+    </main>
 
-                <!-- 3.Bar icon inside button div-->
-                <div><i class="fa-solid fa-bars" onclick="openMenu()" id="menuIcon"></i></div>
-
-                <!-- 4.circle-xmark inside button div-->
-                <div><i class="fa-solid fa-circle-xmark" onclick="closeMenu()" id="closeIcon"></i></div>
-            </div>
-            
-        </nav>    
-   </header>
-   
-   
-  <script src="js/menubar.js"></script>
+    <script src="js/global.js"></script>
 </body>
 </html>
