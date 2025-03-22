@@ -73,10 +73,10 @@ body {
     max-width: 50px;
     max-height: 80px;
     transform: scale(0.9); 
-    position: absolute;
-    top: 18%;
-    right: 5%;
-    display: flex;
+    position:absolute;
+    top: 50%;
+    right: 45%;
+    display: block;
     justify-content: flex-end;
     align-items: flex-start;
  

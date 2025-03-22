@@ -74,8 +74,8 @@ body {
     max-height: 80px;
     transform: scale(0.5); 
     position: absolute;
-    top: 25%;
-    right: 5%;
+    top: 35%;
+    right: 30%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;

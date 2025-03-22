@@ -10,10 +10,14 @@ function toggleMenu() {
     mobileMenu.classList.toggle('show');
 
     // Check if menu is open or closed and change icon accordingly
-    if (mobileMenu.classList.contains('show')) {
+    if (mobileMenu.classList.contains('show')) 
+    {
         menuIconIcon.classList.remove('fa-bars');
         menuIconIcon.classList.add('fa-times');
-    } else {
+    } 
+    
+    else 
+    {
         menuIconIcon.classList.remove('fa-times');
         menuIconIcon.classList.add('fa-bars');
     }

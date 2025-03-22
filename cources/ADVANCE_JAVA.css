@@ -70,14 +70,27 @@ body {
     height: 20%;
     max-width: 50px;
     max-height: 50px;
-    transform: scale(0.3); 
+    transform: scale(0.2); 
     position: absolute;
-    top: 20%;
-    right: 5%;
-    display: flex;
+    top: 35%;
+    left: 45%;
+    display: block;
     justify-content: flex-end;
     align-items: flex-start;
+    
  
+}
+
+@media screen and (max-width:480px){
+    
+    .hero-section .hero-details .hero-image-wrapper{
+        flex-direction: column;
+    }
+    .hero-section .hero-details .heading{
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 
 

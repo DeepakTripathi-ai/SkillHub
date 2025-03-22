@@ -65,7 +65,9 @@ body {
             color:white; 
             line-height: 1.5;
             text-align: justify;
-            margin: 20px;  }
+            margin: 20px;  
+            float: left;
+        }
 
 .hero-section .hero-details .hero-image-wrapper{
     
@@ -75,13 +77,14 @@ body {
     height: 50%;
     max-width: 50px;
     max-height: 80px;
-    transform: scale(0.6); 
+    transform: scale(0.3); 
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 5%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    z-index: 0;
  
 }
 

@@ -69,8 +69,8 @@ body {
     transform: scale(0.4); 
     float: right;
     position: absolute;
-    top: 20%;
-    right: 5%;
+    top: 35%;
+    right: 30%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
