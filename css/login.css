@@ -6,7 +6,7 @@
 
 .login-container {
     background-color: #1d2a44; /* Navy Dark Blue */
-    color: white;
+    /* color: white; */ 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

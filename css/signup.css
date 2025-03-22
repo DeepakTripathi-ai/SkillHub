@@ -5,7 +5,7 @@
 
 .signup-container {
     background-color: #1d2a44; /* Navy Dark Blue */
-    color: white; /* Text color changed to white for better visibility */
+    /* color: white; Text color changed to white for better visibility */
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
